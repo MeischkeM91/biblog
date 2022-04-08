@@ -134,6 +134,7 @@ html, body{
 /* End book list styling */
 /***** New book form styling *****/
 .new-book{
+    display: none;
     position: fixed;
     top: 30%;
     left: 30%;
