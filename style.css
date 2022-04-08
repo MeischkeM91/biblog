@@ -132,4 +132,55 @@ html, body{
     justify-self: center;
 }
 /* End book list styling */
+/***** New book form styling *****/
+.new-book{
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 300px;
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 15px;
+    padding: 2%;
+}
+#new-book-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#new-book-form input{
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 4px 5px 0px;
+}
+#new-book-form input:focus{
+    outline: none;
+    border-bottom: 3px solid darkgray;
+}
+#new-pages{
+    width: 150px;
+}
+.new-status-container, .new-rating-container{
+    align-self: center;
+    text-align: center;
+}
+#create-btn{
+    font-size: 18px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 3px 20px;
+}
+#create-btn:hover{
+    background-color: whitesmoke;
+    transition: transform .2s;
+    transform: scale(1.05);
+}
+#create-btn:active{
+    transition: transform .1s;
+    transform: translate(1px,1px);
+}
+/***** End New book form styling *****/
 /***** End Content styling ******/

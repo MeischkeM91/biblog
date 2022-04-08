@@ -58,15 +58,17 @@
                 <input type="radio" name="new-status" id="unread-status" value="unread">
                 <label for="read-status">Unread</label>
             </div>
-            <label for="new-rating">How would you rate the book?</label>
-            <select name="new-rating" id="new-rating">
-                <option value="1 - Yikes!">1 - Yikes!</option>
-                <option value="2 - Bad">2 - Bad</option>
-                <option value="3 - OK">3 - OK</option>
-                <option value="4 - Good">4 - Good</option>
-                <option value="5 - Great!">5 - Great!</option>
-            </select>
-            <button type="button" id="create-btn" onclick="createBook()">Create</button>
+            <div class="new-rating-container">
+                <p>How would you rate the book?</p>
+                <select name="new-rating" id="new-rating">
+                    <option value="1 - Yikes!">1 - Yikes!</option>
+                    <option value="2 - Bad">2 - Bad</option>
+                    <option value="3 - OK" selected>3 - OK</option>
+                    <option value="4 - Good">4 - Good</option>
+                    <option value="5 - Great!">5 - Great!</option>
+                </select>
+            </div>
+            <button type="button" id="create-btn" onclick="addBook()">Add Book</button>
         </form>
     </div>
 </body>
