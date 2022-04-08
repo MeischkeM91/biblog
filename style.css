@@ -6,9 +6,10 @@
 html, body{
     background: rgb(7,123,138);
     background: linear-gradient(132deg, rgba(7,123,138,1) 0%, rgba(162,213,198,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     min-width: 600px;
-    height: 100%;
 }
 .container{
     display: grid;
