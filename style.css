@@ -19,7 +19,7 @@ html, body{
 /***** Header styling ******/
 .header{
     grid-area: header;
-    background-color: white;
+    background-color: whitesmoke;
     text-align: center;
     box-shadow: 0px 1px 6px black;
 }
@@ -32,7 +32,9 @@ html, body{
 /***** Content styling ******/
 .content{
     grid-area: content;
+    padding: 15px 25px;
 }
+/* Add Book button */
 .add-btn{
     display: grid;
     justify-items: center;
@@ -61,4 +63,16 @@ html, body{
     height: 36px;
     width: auto;
 }
+/* End Add Book button */
+/* book-list-title title */
+.book-list-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 15px;
+}
+.book-list-item{
+    background-color: whitesmoke;
+}
+/* end book-list-title title */
 /***** End Content styling ******/
