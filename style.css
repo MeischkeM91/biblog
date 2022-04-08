@@ -66,6 +66,13 @@ html, body{
 }
 /* End Add Book button */
 /* Book list styling */
+.book-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
 .book-list-title{
     font-size: 24px;
     font-weight: bold;
