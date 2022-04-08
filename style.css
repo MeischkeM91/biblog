@@ -7,6 +7,7 @@ html, body{
     background: rgb(7,123,138);
     background: linear-gradient(132deg, rgba(7,123,138,1) 0%, rgba(162,213,198,1) 100%);
     width: 100%;
+    min-width: 600px;
     height: 100%;
 }
 .container{
@@ -64,7 +65,7 @@ html, body{
     width: auto;
 }
 /* End Add Book button */
-/* book-list-title title */
+/* Book list styling */
 .book-list-title{
     font-size: 24px;
     font-weight: bold;
@@ -72,7 +73,56 @@ html, body{
     margin-bottom: 15px;
 }
 .book-list-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: 
+    "title title pages"
+    "author author pages"
+    "status rating rating";
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
     background-color: whitesmoke;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 15px;
+    padding: 5px 10px 10px;
 }
-/* end book-list-title title */
+.book-title{ 
+    grid-area: title;
+    align-self: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+.book-author{
+    grid-area: author;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+.book-pages{
+    grid-area: pages; 
+    justify-self: end;
+    align-self: center;
+    padding-right: 15px;
+}
+.book-status{
+    grid-area: status;
+    justify-self: center;
+    width: 150px;
+    text-align: center;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.book-status.read{
+    background-color: #a2d5c6;
+}
+.book-status.unread{
+    background-color: #D6AEA3;
+}
+.book-rating{
+    grid-area: rating;
+    justify-self: center;
+}
+/* End book list styling */
 /***** End Content styling ******/
