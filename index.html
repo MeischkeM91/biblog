@@ -40,36 +40,36 @@
             </div>
         </div>
         <div class="add-btn" onclick="displayForm()"><img src="images/add-book.svg" alt="Add Book"></div>
-    </div>
-    <div class="new-book">
-        <form id="new-book-form">
-            <input type="text" id="new-title" placeholder="Book Name">
-            <input type="text" id="new-author" placeholder="Author">
-            <div class="new-pages-container">
-                <label for="new-pages">No. of Pages</label>
-                <input type="number" name="new-pages" id="new-pages">
-            </div>
-            <div class="new-status-container">
-                <p>Status of Book:</p>
-                <input type="radio" name="new-status" id="read-status" value="read">
-                <label for="read-status">Read</label>
-                <input type="radio" name="new-status" id="inprogress-status" value="inprogress">
-                <label for="read-status">In-Progress</label>
-                <input type="radio" name="new-status" id="unread-status" value="unread">
-                <label for="read-status">Unread</label>
-            </div>
-            <div class="new-rating-container">
-                <p>How would you rate the book?</p>
-                <select name="new-rating" id="new-rating">
-                    <option value="1 - Yikes!">1 - Yikes!</option>
-                    <option value="2 - Bad">2 - Bad</option>
-                    <option value="3 - OK" selected>3 - OK</option>
-                    <option value="4 - Good">4 - Good</option>
-                    <option value="5 - Great!">5 - Great!</option>
-                </select>
-            </div>
-            <button type="button" id="create-btn" onclick="addBook()">Add Book</button>
-        </form>
+        <div class="new-book">
+            <form id="new-book-form">
+                <input type="text" id="new-title" placeholder="Book Name">
+                <input type="text" id="new-author" placeholder="Author">
+                <div class="new-pages-container">
+                    <label for="new-pages">No. of Pages</label>
+                    <input type="number" name="new-pages" id="new-pages">
+                </div>
+                <div class="new-status-container">
+                    <p>Status of Book:</p>
+                    <input type="radio" name="new-status" id="read-status" value="read">
+                    <label for="read-status">Read</label>
+                    <input type="radio" name="new-status" id="inprogress-status" value="inprogress">
+                    <label for="read-status">In-Progress</label>
+                    <input type="radio" name="new-status" id="unread-status" value="unread">
+                    <label for="read-status">Unread</label>
+                </div>
+                <div class="new-rating-container">
+                    <p>How would you rate the book?</p>
+                    <select name="new-rating" id="new-rating">
+                        <option value="1 - Yikes!">1 - Yikes!</option>
+                        <option value="2 - Bad">2 - Bad</option>
+                        <option value="3 - OK" selected>3 - OK</option>
+                        <option value="4 - Good">4 - Good</option>
+                        <option value="5 - Great!">5 - Great!</option>
+                    </select>
+                </div>
+                <button type="button" id="create-btn" onclick="addBook()">Add Book</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
