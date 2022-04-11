@@ -63,6 +63,7 @@ const createCard = (bookObj) => {
     editBtn.src='images/edit-btn.svg';
     const closeBtn = document.createElement('img');
     closeBtn.src='images/close-btn.svg';
+    // delete the book card when clicked
     closeBtn.addEventListener('click', ()=>{
         updateBtns.parentElement.remove();
     })
@@ -119,8 +120,3 @@ const createCard = (bookObj) => {
 bookListArr.forEach(el => {
     createCard(el)
 });
-
-
-
-
-
