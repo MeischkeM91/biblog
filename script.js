@@ -63,6 +63,9 @@ const createCard = (bookObj) => {
     editBtn.src='images/edit-btn.svg';
     const closeBtn = document.createElement('img');
     closeBtn.src='images/close-btn.svg';
+    closeBtn.addEventListener('click', ()=>{
+        updateBtns.parentElement.remove();
+    })
     // create book details
     //title
     const bookTitle = document.createElement('div');
