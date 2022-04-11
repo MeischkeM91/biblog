@@ -98,7 +98,21 @@ html, body{
 }
 .update-btns{
     grid-area: updateBtns;
+    justify-self: end;
     align-self: end;
+    margin-bottom: -5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+.update-btns > img:hover{
+    background-color: whitesmoke;
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+.update-btns > img:hover:active{
+    transition: transform .1s;
+    transform: translate(1px,1px);
 }
 .book-title{ 
     grid-area: title;
