@@ -17,7 +17,7 @@ function Book(title, author, pages, status, rating){
     this.pages= 'Pages: ' + pages;
     this.status=status;
     this.rating=rating;
-}
+};
 // Create Array to house the Book Objs
 let bookListArr = [];
 // A few already created book objs
@@ -49,7 +49,7 @@ const addBook = () => {
     newPages.value = '';
     newStatus.value = '';
     newRating.value = '';
-}
+};
 
 const createCard = (bookObj) => {
     this.book=bookObj;
@@ -73,6 +73,21 @@ const createCard = (bookObj) => {
     const bookStatus = document.createElement('div');
     bookStatus.classList.add('book-status');
     bookStatus.textContent = book.status;
+
+    // Determine if book has been read or unread and add corresponding class
+    const determineStatus = (book) =>{
+        if(book.status == 'Read'){
+            bookStatus.classList.add('read')
+        }
+        else if(book.status == 'Unread'){
+            bookStatus.classList.add('unread')
+        }
+        else{
+            return
+        }
+    };
+
+    determineStatus(book);
     //rating
     const bookRating = document.createElement('div');
     bookRating.classList.add('book-rating');
@@ -86,12 +101,13 @@ const createCard = (bookObj) => {
     bookListItem.appendChild(bookPages);
     bookListItem.appendChild(bookStatus);
     bookListItem.appendChild(bookRating);
-}
+};
 
 // Create the cards for already created book Objs
 bookListArr.forEach(el => {
     createCard(el)
 });
+
 
 
 
