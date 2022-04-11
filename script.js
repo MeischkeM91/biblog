@@ -30,7 +30,22 @@ const newRating = document.querySelector('#new-rating');
 
 
 const addBook = () => {
-    let book = new Book(newTitle.value, newAuthor.value, newPages.value, newStatus.value, newRating.value);
+    let book1 = new Book(newTitle.value, newAuthor.value, newPages.value, newStatus.value, newRating.value);
+
+    //Create the card for the book added
+    createCard(book1);
+    //hide the add book form
+    displayForm();
+    //Clear the add book form
+    newTitle.value = '';
+    newAuthor.value = '';
+    newPages.value = '';
+    newStatus.value = '';
+    newRating.value = '';
+}
+
+const createCard = (bookObj) => {
+    this.book=bookObj;
     // create card for book list item
     const bookListItem = document.createElement('div');
     bookListItem.classList.add('book-list-item');
@@ -64,15 +79,6 @@ const addBook = () => {
     bookListItem.appendChild(bookPages);
     bookListItem.appendChild(bookStatus);
     bookListItem.appendChild(bookRating);
-
-    //hide the add book form
-    displayForm();
-    //Clear the add book form
-    newTitle.value = '';
-    newAuthor.value = '';
-    newPages.value = '';
-    newStatus.value = '';
-    newRating.value = '';
 }
 
 
