@@ -88,6 +88,10 @@ const createCard = (bookObj) => {
     bookListItem.appendChild(bookRating);
 }
 
+// Create the cards for already created book Objs
+bookListArr.forEach(el => {
+    createCard(el)
+});
 
 
 
