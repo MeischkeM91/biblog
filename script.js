@@ -10,7 +10,7 @@ const displayForm = () => {
     }
 };
 
-// book object
+// Book object
 function Book(title, author, pages, status, rating){
     this.title=title;
     this.author=author;
@@ -18,10 +18,11 @@ function Book(title, author, pages, status, rating){
     this.status=status;
     this.rating=rating;
 }
+// Create Array to house the Book Objs
 let bookListArr = [];
+// A few already created book objs
 bookListArr[0] = new Book('The Odyssey','Homer',356,'Read','4/5 - Good');
 bookListArr[1] = new Book('My Book','Me',6,'Read','1/5 - Yikes!');
-console.log(bookListArr);
 
 // Add a new book entry to list when addBook() runs
 const booklist = document.querySelector('.book-list');
@@ -33,14 +34,16 @@ const newRating = document.querySelector('#new-rating');
 
 
 const addBook = () => {
+    // Create new book Obj
     let ourNewBook = bookListArr[bookListArr.length];
     ourNewBook = new Book(newTitle.value, newAuthor.value, newPages.value, newStatus.value, newRating.value);
+    // Add the created Obj to Arr
     bookListArr.push(ourNewBook);
-    //Create the card for the book added
+    // Create the card for the book added
     createCard(ourNewBook);
-    //hide the add book form
+    // Hide the add book form
     displayForm();
-    //Clear the add book form
+    // Clear the add book form
     newTitle.value = '';
     newAuthor.value = '';
     newPages.value = '';
