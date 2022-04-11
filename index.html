@@ -51,19 +51,18 @@
                 </div>
                 <div class="new-status-container">
                     <p>Status of Book:</p>
-                    <input type="radio" name="new-status" id="read-status" value="read">
-                    <label for="read-status">Read</label>
-                    <input type="radio" name="new-status" id="inprogress-status" value="inprogress">
-                    <label for="read-status">In-Progress</label>
-                    <input type="radio" name="new-status" id="unread-status" value="unread">
-                    <label for="read-status">Unread</label>
+                    <select name="new-status" id="new-status">
+                        <option value="Read">Read</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Unread" selected>Unread</option>
+                    </select>
                 </div>
                 <div class="new-rating-container">
                     <p>How would you rate the book?</p>
                     <select name="new-rating" id="new-rating">
                         <option value="1 - Yikes!">1 - Yikes!</option>
                         <option value="2 - Bad">2 - Bad</option>
-                        <option value="3 - OK" selected>3 - OK</option>
+                        <option value="3 - OK">3 - OK</option>
                         <option value="4 - Good">4 - Good</option>
                         <option value="5 - Great!">5 - Great!</option>
                     </select>
