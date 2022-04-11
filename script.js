@@ -86,7 +86,6 @@ const createCard = (bookObj) => {
             return
         }
     };
-
     determineStatus(book);
     //rating
     const bookRating = document.createElement('div');
