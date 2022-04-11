@@ -83,8 +83,9 @@ html, body{
 .book-list-item{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 30px 1fr auto 1fr;
     grid-template-areas: 
+    "updateBtns updateBtns updateBtns"
     "title title pages"
     "author author pages"
     "status rating rating";
@@ -94,6 +95,10 @@ html, body{
     box-shadow: 1px 1px 3px black;
     border-radius: 15px;
     padding: 5px 10px 10px;
+}
+.update-btns{
+    grid-area: updateBtns;
+    align-self: end;
 }
 .book-title{ 
     grid-area: title;

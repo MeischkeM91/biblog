@@ -56,6 +56,13 @@ const createCard = (bookObj) => {
     // create card for book list item
     const bookListItem = document.createElement('div');
     bookListItem.classList.add('book-list-item');
+    // add Update buttons - the edit and remove btns
+    const updateBtns = document.createElement('div');
+    updateBtns.classList.add('update-btns');
+    const editBtn = document.createElement('img');
+    editBtn.src='images/edit-btn.svg';
+    const closeBtn = document.createElement('img');
+    closeBtn.src='images/close-btn.svg';
     // create book details
     //title
     const bookTitle = document.createElement('div');
@@ -95,6 +102,9 @@ const createCard = (bookObj) => {
     console.log(book);
     //Create the book card
     booklist.appendChild(bookListItem);
+    bookListItem.appendChild(updateBtns);
+    updateBtns.appendChild(editBtn);
+    updateBtns.appendChild(closeBtn);
     bookListItem.appendChild(bookTitle);
     bookListItem.appendChild(bookAuthor);
     bookListItem.appendChild(bookPages);
